@@ -7,7 +7,7 @@
 Summary: A process-transparent configuration system
 Name: GConf2
 Version: 2.28.0
-Release: 6%{?dist}
+Release: 7%{?dist}
 License: LGPLv2+
 Group: System Environment/Base
 Source: http://download.gnome.org/sources/GConf/2.28/GConf-%{version}.tar.bz2
@@ -45,6 +45,9 @@ Patch3: 0001-Make-the-defaults-mechanism-find-the-right-polkit-ac.patch
 
 # https://bugzilla.redhat.com/show_bug.cgi?id=576226
 Patch4: new-environment-variables.patch
+
+# https://bugzilla.redhat.com/show_bug.cgi?id=1279141
+Patch5: tie-saved-state-file-to-session.patch
 
 %description
 GConf is a process-transparent configuration database API used to
@@ -84,6 +87,7 @@ which require GTK+.
 %patch2 -p1 -b .no-access
 %patch3 -p1 -b .defaults-actions
 %patch4 -p1 -b .new-environment-variables
+%patch5 -p1 -b .tie-saved-state-to-session
 
 autoreconf -f -i
 
@@ -161,6 +165,10 @@ fi
 %{_libdir}/pkgconfig/*
 
 %changelog
+* Fri Oct 28 2016 Ray Strode <rstrode@redhat.com> - 2.28.0-7
+- Tie saved_state file to session
+  Resolves: #1279141
+
 * Tue Mar 23 2010 Ray Strode <rstrode@redhat.com> 2.28.0-6
 Resolves: #576226
 - Add new environment variables for controlling sync and
