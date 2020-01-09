@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<indexdiv>
+<indexdiv><title>C</title>
+<indexentry><primaryie linkends="gconf-client-notify"><link linkend="gconf-client-notify">gconf_client_notify</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gconf-client-recursive-unset"><link linkend="gconf-client-recursive-unset">gconf_client_recursive_unset</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<!DOCTYPE indexdiv PUBLIC "-//OASIS//DTD DocBook XML V4.1.2//EN" 
+               "http://www.oasis-open.org/docbook/xml/4.1.2/docbookx.dtd">
+<indexdiv>
+<indexdiv><title>E</title>
+<indexentry><primaryie linkends="gconf-entry-free"><link linkend="gconf-entry-free">gconf_entry_free</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>I</title>
+<indexentry><primaryie linkends="gconf-init"><link linkend="gconf-init">gconf_init</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gconf-is-initialized"><link linkend="gconf-is-initialized">gconf_is_initialized</link></primaryie></indexentry>
+</indexdiv>
+<indexdiv><title>P</title>
+<indexentry><primaryie linkends="gconf-postinit"><link linkend="gconf-postinit">gconf_postinit</link></primaryie></indexentry>
+<indexentry><primaryie linkends="gconf-preinit"><link linkend="gconf-preinit">gconf_preinit</link></primaryie></indexentry>
+</indexdiv>
+</indexdiv>
